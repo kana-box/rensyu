@@ -1,0 +1,2072 @@
+@charset "UTF-8";
+/* ================================================ */
+/*               全体設定                */
+/* ================================================ */
+
+body {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif, Verdana, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+
+/* ================================================ */
+/*ヘッダー：*/
+/* ================================================ */
+
+header{
+	width: 100%;
+	height: auto;
+}
+
+header .logo{
+ width:483px;
+ height: 55px;
+ margin: 0 auto;
+ display: block;
+ padding: 55px 0;
+}
+
+header nav{
+	width: 100%;
+	height: 80px;
+	background-color: #891835;
+	line-height: 80px;
+	font-family: "凸版文久明朝",sans-serif;
+}
+
+header nav ul{
+	display: flex;
+	width: 960px;
+	margin: 0 auto;
+}
+
+header ul li{
+	width: 192px;
+	border-right: solid 1px #c4c3c3;
+}
+
+header ul li:first-child{
+	border-left: solid 1px #c4c3c3;
+}
+
+header nav ul li .navlist{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+}
+
+.navlist {
+  position: relative;
+  display: inline-block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	letter-spacing: 2px;
+}
+
+.navlist:hover{
+  opacity: 0.8;
+}
+
+.navlist::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #891835;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+
+.navlist:hover::after {
+  transform: scale(1, 1);
+}
+
+header .kv{
+	width: 100%;
+	height: 586px;
+}
+
+.menu_list{
+	display: none;
+}
+
+/*----------------------------
+* レスポンシブ　ハンバーガーメニュー
+　メニュー開閉ボタン
+*----------------------------*/
+.menu-btn{
+  position: fixed;
+  top: 80px;
+  right: 30px;
+  z-index: 4;
+  width: 5px;
+  height: 5px;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
+/*----------------------------
+* 　レスポンシブ　ハンバーガーメニュー
+　　メニュー本体
+*----------------------------*/
+.menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}
+
+.menu__item a{
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+  text-align: center;
+  color: #333;
+	box-sizing: border-box;
+	font-family: "凸版文久明朝",sans-serif;
+	text-decoration: none;
+	display: block;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 3px;
+}
+
+.menu__item a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #891835;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+.menu__item a:hover::after {
+  transform: scale(1, 1);
+}
+
+/*----------------------------
+* レスポンシブ　ハンバーガーメニュー
+　アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu{
+  transform: translateX(100vw);
+  transition: all .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+  transform: translateX(0);
+}
+
+
+/* ================================================ */
+/*メインコンテンツ メッセージ*/
+/* ================================================ */
+
+
+.messageinner{
+	width: 1200px;
+	height: auto;
+	margin: 135px auto 0 auto;
+	font-family: "游教科書体", sans-serif;
+}
+
+.messageimg{
+	float: left;
+	width: 725px;
+	height: 405px;
+	position: relative;
+}
+
+.messagelist{
+	color: #333;
+	font-size: 20px;
+	float: right;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	visibility: hidden;
+	position: relative;
+}
+
+.message{
+	padding-left: 35px;
+}
+
+.message p{
+	padding-left: 10px;
+	letter-spacing: 4px;
+}
+
+.message1{
+	position: absolute;
+	left: -10;
+	top: 0;
+	font-family: 'Georgia',sans-serif;
+	font-size: 22px;
+	letter-spacing: 6px;
+
+}
+
+
+/* ================================================ */
+/*メインコンテンツ　ニュース*/
+/* ================================================ */
+
+.newsinner{
+	width: 100%;
+	margin: 250px auto 0 auto;
+	visibility: hidden;
+}
+
+.news_list{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	background-color: #eee;
+}
+
+.title_news{
+	font-size: 35px;
+	font-family: 'Georgia',sans-serif;
+	text-align: center;
+	padding: 30px 0 15px 0;
+	letter-spacing: 5px;
+}
+
+.news_menu li a{
+ text-decoration: none;
+ font-family: '凸版文久明朝',sans-serif;
+ color: #949292;
+ font-size: 16px;
+ padding: 20px 0 ;
+ display: inline-block;
+ margin-left: 300px;
+ position: relative;
+ letter-spacing: 2px;
+}
+
+.news_menu li span{
+	color: #333;
+	padding-left: 50px;
+}
+
+/* .news_menu li a:hover{
+  text-decoration: underline;
+} */
+
+.news_menu{
+	max-height: 200px;
+	overflow-y: scroll;
+}
+
+
+.news_menu li a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #891835;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .5s;
+}
+
+.news_menu li a:hover::after {
+  transform: scale(1, 1);
+}
+
+
+/* ================================================ */
+/*メインコンテンツ　野球部紹介*/
+/* ================================================ */
+
+.aboutinner{
+	width: 1200px;
+	margin: 250px auto 0 auto;
+	display: flex;
+	visibility: hidden;
+}
+
+.about_menu{
+	height: auto;
+	font-family: '游教科書体',sans-serif;
+	color: #333;
+	margin: 0 auto;
+}
+
+.about_menu h2{
+	font-size: 35px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.about_menu p{
+	padding: 20px 0 20px 0;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 2px;
+}
+
+.about_menu ul{
+	display: flex;
+	padding-bottom: 20px;
+}
+
+.about_menu ul li a{
+	text-decoration: none;
+	color: #891835;
+	font-size: 14px;
+	padding: 40px;
+}
+
+.about_menu ul li a:hover{
+	text-decoration: underline;
+}
+
+.about_btn a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #891835;
+	color: #fff;
+	width: 205px;
+	height: 42px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+	margin-top: 20px;
+	margin-left: 100px;
+	transition-property: all;
+	transition: 0.3s linear;
+	letter-spacing: 2px;
+}
+
+.about_btn a:hover{
+	opacity: 0.8;
+}
+
+.about_btn a::after{
+	content: '→';
+	position: absolute;
+	top: 1px;
+	right: 35px;
+}
+
+.about_img{
+	margin-right: 100px;
+}
+
+
+/* ================================================ */
+/*メインコンテンツ 試合情報*/
+/* ================================================ */
+
+.gameinfoinner{
+	width: 1400px;
+	margin: 250px auto 0 auto;
+	display: flex;
+	position: relative;
+}
+
+.gameinfoimg{
+	height: 500px;
+  position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	visibility: hidden;
+}
+
+.gameinfo_list{
+	margin: 50px auto 0 auto;
+	width: 450px;
+	height: 450px;
+	background-color: #eee;
+	padding: 60px 0 0 100px;
+	font-family: '游教科書体',sans-serif;
+	color: #333;
+	position: absolute;
+	top: 50px;
+	right: 0;
+	z-index: 1;
+}
+
+.gameinfo_list h2{
+	font-family: 'Georgia',sans-serif;
+	font-size: 28px;
+	letter-spacing: 3px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+}
+
+.gameinfo_list .game{
+ font-size: 18px;
+ margin-bottom: 30px;
+ padding-left: 40px;
+}
+
+.gameinfo_message{
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	padding-left: 40px;
+}
+
+.gameinfo_list ul{
+	display: flex;
+	padding-bottom: 20px;
+	padding-left: 60px;
+}
+
+.gameinfo_list ul li a{
+	text-decoration: none;
+	color: #891835;
+	font-size: 14px;
+	padding: 20px;
+}
+
+.gameinfo_list ul li a:hover{
+	text-decoration: underline;
+}
+
+.game_btn a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #891835;
+	color: #fff;
+	width: 205px;
+	height: 42px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+	margin-top: 20px;
+	margin-left: 100px;
+	transition-property: all;
+	transition: 0.3s linear;
+	letter-spacing: 2px;
+}
+
+.game_btn a:hover{
+	opacity: 0.8;
+}
+
+.game_btn a::after{
+	content: '→';
+	position: absolute;
+	top: 1px;
+	right: 35px;
+}
+
+
+
+
+
+/* ================================================ */
+/*メインコンテンツ　過去の戦績*/
+/* ================================================ */
+
+.historyinner{
+	width: 1400px;
+	height: auto;
+	margin: 800px auto 0 auto;
+	color: #333;
+	font-family: '游教科書体',sans-serif;
+	visibility: hidden;
+}
+
+.history_list{
+	width: 466px;
+	margin: 0 auto;
+	float: left;
+}
+
+.historyinner h2{
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+.history_game{
+	transition-property: all;
+	transition: 0.3s linear;
+	overflow: hidden;
+	width: 466px;
+	height: auto;
+}
+
+.history_game img{
+	display: block;
+	margin: 0;
+	padding: 0;
+	transition: 0.1s all;
+}
+
+.history_game img:hover{
+	transform:scale(1.2,1.2);
+  transition: 1s all;
+}
+
+.history_gametitle1 a{
+	text-align: center;
+	background-color: #29303a;
+	color: #fff;
+	font-size: 14px;
+	font-family: '凸版文久明朝',sans-serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 466px;
+	letter-spacing: 2px;
+}
+
+.history_gametitle2 a{
+	text-align: center;
+	background-color: #3a414c;
+	color: #fff;
+	font-size: 14px;
+	font-family: '凸版文久明朝',sans-serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 466px;
+	letter-spacing: 2px;
+}
+
+.history_gametitle1 a:hover,
+.history_gametitle2 a:hover{
+	opacity: 0.8;
+	text-decoration: underline;
+}
+
+.history_btn{
+	text-align: center;
+}
+
+.history_btn a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #891835;
+	color: #fff;
+	width: 205px;
+	height: 42px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+	margin-top: 40px;
+	transition-property: all;
+	transition: 0.3s linear;
+	letter-spacing: 2px;
+}
+
+
+.history_btn a:hover{
+	opacity: 0.8;
+}
+
+.history_btn a::after{
+	content: '→';
+	position: absolute;
+	top: 1px;
+	right: 35px;
+}
+
+/* ================================================ */
+/*メインコンテンツ　コンテンツ一覧*/
+/* ================================================ */
+
+
+.contentsinner{
+	width: 1400px;
+	height: auto;
+	margin: 250px auto 0 auto;
+	color: #333;
+	font-family: '游教科書体',sans-serif;
+	visibility: hidden;
+}
+
+.contents_list{
+	width: 350px;
+	margin: 0 auto;
+	float: left;
+}
+
+.contentsinner h2{
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+.contents{
+	transition-property: all;
+	transition: 0.3s linear;
+	overflow: hidden;
+	width: 350px;
+	height: auto;
+}
+
+.contents img{
+	display: block;
+	margin: 0;
+	padding: 0;
+	transition: 0.1s all;
+}
+
+.contents img:hover{
+	transform:scale(1.2,1.2);
+  transition: 1s all;
+}
+
+.contents_title1 a{
+	text-align: center;
+	background-color: #29303a;
+	color: #fff;
+	font-size: 14px;
+	font-family: '凸版文久明朝',sans-serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 350px;
+	letter-spacing: 2px;
+}
+
+.contents_title2 a{
+	text-align: center;
+	background-color: #3a414c;
+	color: #fff;
+	font-size: 14px;
+	font-family: '凸版文久明朝',sans-serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 350px;
+	letter-spacing: 2px;
+}
+
+.contents_title1 a:hover,
+.contents_title2 a:hover{
+	opacity: 0.8;
+	text-decoration: underline;
+}
+
+.contents_btn{
+	text-align: center;
+}
+
+.contents_btn a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #891835;
+	color: #fff;
+	width: 205px;
+	height: 42px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+	margin-top: 40px;
+	transition-property: all;
+	transition: 0.3s linear;
+	letter-spacing: 2px;
+}
+
+
+.contents_btn a:hover{
+	opacity: 0.8;
+}
+
+.contents_btn a::after{
+	content: '→';
+	position: absolute;
+	top: 1px;
+	right: 20px;
+}
+
+
+/* ================================================ */
+/*フッター*/
+/* ================================================ */
+
+footer{
+	width: 100%;
+	background-color:#891835;
+	height: 150px;
+	color: #fff;
+	font-family: '凸版文久明朝',sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 135px;
+}
+
+.footerinner{
+	width: 1400px;
+	padding-top: 50px;
+	margin: 0 auto;
+}
+
+.footerinner ul{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.footerinner ul li{
+ border-left: solid 1px #fff;
+ padding-right: 30px;
+}
+
+.footerinner ul li:last-child{
+	border-right: 1px solid #fff;
+}
+
+.footerinner ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	display: block;
+	padding-left: 30px;
+}
+
+.footerinner ul li a:hover{
+	text-decoration: underline;
+}
+
+/* ================================================ */
+/*レスポンシブ*/
+/* ================================================ */
+
+@media (max-width: 560px){
+
+	/* header */
+
+	header .logo{
+		width: 65%;
+	}
+
+	header nav{
+	  display: none;
+	}
+
+	header .kv{
+		height: 350px;
+	}
+
+	/* ハンバーガーメニュー */
+
+	.menu_list{
+		display: block;
+	}
+
+	/* message */
+
+	.messageinner{
+		width: 100%;
+		margin: 70px auto 0 auto;
+		height: auto;
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.messageimg{
+		float: none;
+		width: 100%;
+		height: 30%;
+		order: 2;
+		margin-top: 120px;
+		position: relative;
+	}
+
+	.messagelist{
+		color: #333;
+		font-size: 16px;
+		float: none;
+		visibility: hidden;
+		order: 1;
+		width: 100%;
+		height: auto;
+		-ms-writing-mode: horizontal-tb;
+		writing-mode: horizontal-tb;
+		text-align: center;
+	}
+
+	.message1{
+		font-family: 'Georgia',sans-serif;
+		font-size: 20px;
+		text-align: center;
+		display: block;
+		position: absolute;
+		top: 105%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	.message1 p{
+		padding-bottom: 10px;
+		padding-left: 0;
+	}
+
+	.message{
+		padding-bottom: 35px;
+		padding-left: 0;
+	}
+	
+	.message p{
+		padding-bottom: 10px;
+		letter-spacing: 2px;
+	}
+
+	/* news */
+
+.newsinner{
+	width: 100%;
+	margin: 135px auto 0 auto;
+}
+
+.news_list{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	background-color: #eee;
+}
+
+.title_news{
+	font-size: 35px;
+	font-family: 'Georgia',sans-serif;
+	text-align: center;
+	padding: 30px 0 15px 0;
+	letter-spacing: 2px;
+}
+
+.news_menu li a{
+ text-decoration: none;
+ font-family: '凸版文久明朝',sans-serif;
+ color: #949292;
+ font-size: 14px;
+ padding: 20px 0 ;
+ display: inline-block;
+ margin-left: 10px;
+ position: relative;
+ letter-spacing: 2px;
+}
+
+.news_menu li span{
+	color: #333;
+	padding-left: 0px;
+	display: block;
+}
+
+/* .news_menu li a:hover{
+  text-decoration: underline;
+} */
+
+.news_menu{
+	max-height: 200px;
+	overflow-y: scroll;
+	margin: 0 auto;
+	width: auto;
+}
+
+
+.news_menu li a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #891835;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+
+.news_menu li a:hover::after {
+  transform: scale(1, 1);
+}
+
+/*　野球部紹介 */
+
+.aboutinner{
+	width: 100%;
+	margin: 135px auto 0 auto;
+	display: block;
+	visibility: hidden;
+}
+
+.about_menu{
+	margin: 300px auto 0 auto;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	padding: 0;
+	font-family: '游教科書体',sans-serif;
+	color: #333;
+}
+
+.about_menu h2{
+	font-size: 35px;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.about_menu .about_message{
+	padding: 20px 0 20px 0;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.about_menu ul{
+	display: flex;
+	padding-bottom: 20px;
+	padding-left: 5px;
+}
+
+.about_menu ul li a{
+	text-decoration: none;
+	color: #891835;
+	font-size: 10px;
+	padding: 10px;
+}
+
+.about_menu ul li a:hover{
+	text-decoration: underline;
+}
+
+.about_btn a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #891835;
+	color: #fff;
+	width: 180px;
+	height: 42px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+	margin: 40px auto 0 auto;
+	transition-property: all;
+	transition: 0.3s linear;
+}
+
+.about_btn a:hover{
+	opacity: 0.8;
+}
+
+.about_btn a::after{
+	content: '→';
+	position: absolute;
+	top: 1px;
+	right: 40px;
+}
+
+.about_img{
+	order: 1;
+	max-width: 100%;
+	display: inline-block;
+	margin-right: 0px;
+	display: none;
+}
+
+/* 試合情報 */
+
+.gameinfoinner{
+	width: 100%;
+	height: auto;
+	margin: 135px auto 0 auto;
+	display: block;
+}
+
+.gameinfoimg{
+	width: 100%;
+	height: 300px;
+	visibility: hidden;
+}
+
+.gameinfo_list{
+	margin: 300px auto 0 auto;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	padding: 0;
+	font-family: '游教科書体',sans-serif;
+	color: #333;
+}
+
+.gameinfo_list h2{
+	font-family: 'Georgia',sans-serif;
+	font-size: 24px;
+	letter-spacing: 3px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+}
+
+.gameinfo_list .game{
+ font-size: 16px;
+ margin-bottom: 30px;
+ padding-left: 0px;
+}
+
+.gameinfo_message{
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	padding-left: 30px;
+}
+
+.gameinfo_list ul{
+	display: flex;
+	padding-bottom: 20px;
+	padding-left: 30px;
+}
+
+.gameinfo_list ul li a{
+	text-decoration: none;
+	color: #891835;
+	font-size: 12px;
+	padding: 20px;
+}
+
+.gameinfo_list ul li a:hover{
+	text-decoration: underline;
+}
+
+.game_btn a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #891835;
+	color: #fff;
+	width: 205px;
+	height: 42px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+	margin-top: 20px;
+	margin-left: 60px;
+	transition-property: all;
+	transition: 0.3s linear;
+	letter-spacing: 2px;
+}
+
+.game_btn a:hover{
+	opacity: 0.8;
+}
+
+.game_btn a::after{
+	content: '→';
+	position: absolute;
+	top: 1px;
+	right: 35px;
+}
+
+/* 過去の戦績 */
+
+.historyinner{
+	width: 100%;
+	height: auto;
+	margin: 1000px auto 0 auto;
+	color: #333;
+	font-family: '游教科書体',sans-serif;
+	visibility: hidden;
+}
+
+.history_list{
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+}
+
+.historyinner h2{
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+.history_game{
+	transition-property: all;
+	transition: 0.3s linear;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+
+.history_game img{
+	display: block;
+	margin: 0;
+	padding: 0;
+	transition: 0.1s all;
+}
+
+.history_game img:hover{
+	transform:scale(1.2,1.2);
+  transition: 1s all;
+}
+
+.history_gametitle1 a{
+	text-align: center;
+	background-color: #29303a;
+	color: #fff;
+	font-size: 14px;
+	font-family: '凸版文久明朝',sans-serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+.history_gametitle2 a{
+	text-align: center;
+	background-color: #3a414c;
+	color: #fff;
+	font-size: 14px;
+	font-family: '凸版文久明朝',sans-serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+.history_gametitle1 a:hover,
+.history_gametitle2 a:hover{
+	opacity: 0.8;
+	text-decoration: underline;
+}
+
+.history_btn{
+	text-align: center;
+}
+
+.history_btn a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #891835;
+	color: #fff;
+	width: 205px;
+	height: 42px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+	margin-top: 40px;
+	transition-property: all;
+	transition: 0.3s linear;
+	letter-spacing: 2px;
+}
+
+
+.history_btn a:hover{
+	opacity: 0.8;
+}
+
+.history_btn a::after{
+	content: '→';
+	position: absolute;
+	top: 1px;
+	right: 35px;
+}
+
+/* コンテンツ一覧 */
+
+.contentsinner{
+	width: 100%;
+	height: auto;
+	margin: 100px auto 0 auto;
+	color: #333;
+	font-family: '游教科書体',sans-serif;
+	visibility: hidden;
+}
+
+.contents_list{
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+}
+
+.contentsinner h2{
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+.contents{
+	transition-property: all;
+	transition: 0.3s linear;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+
+.contents img{
+	display: block;
+	margin: 0;
+	padding: 0;
+	transition: 0.1s all;
+	width: 100%;
+}
+
+.contents img:hover{
+	transform:scale(1.2,1.2);
+  transition: 1s all;
+}
+
+.contents_title1 a{
+	text-align: center;
+	background-color: #29303a;
+	color: #fff;
+	font-size: 14px;
+	font-family: '凸版文久明朝',sans-serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+.contents_title2 a{
+	text-align: center;
+	background-color: #3a414c;
+	color: #fff;
+	font-size: 14px;
+	font-family: '凸版文久明朝',sans-serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+.contents_title1 a:hover,
+.contents_title2 a:hover{
+	opacity: 0.8;
+	text-decoration: underline;
+}
+
+.contents_btn{
+	text-align: center;
+}
+
+.contents_btn a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #891835;
+	color: #fff;
+	width: 205px;
+	height: 42px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+	margin-top: 40px;
+	transition-property: all;
+	transition: 0.3s linear;
+	letter-spacing: 2px;
+}
+
+
+.contents_btn a:hover{
+	opacity: 0.8;
+}
+
+.contents_btn a::after{
+	content: '→';
+	position: absolute;
+	top: 1px;
+	right: 20px;
+}
+
+/* フッター */
+
+footer{
+	width: 100%;
+	background-color:#891835;
+	height: 150px;
+	color: #fff;
+	font-family: '凸版文久明朝',sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+.footerinner{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.footerinner ul{
+	display: block;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.footerinner ul li{
+ border-left: none;
+ padding-right: 30px;
+ padding-bottom: 10px;
+}
+
+.footerinner ul li:last-child{
+	border-right: none;
+}
+
+.footerinner ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	display: block;
+	padding-left: 30px;
+}
+
+.footerinner ul li a:hover{
+	text-decoration: underline;
+}
+	
+}
+
+@media (max-width: 1024px){
+
+	/* header */
+
+	header .logo{
+		width: 65%;
+	}
+
+	header nav{
+	  display: none;
+	}
+
+	header .kv{
+		height: 350px;
+	}
+
+	/* ハンバーガーメニュー */
+
+	.menu_list{
+		display: block;
+	}
+
+	/* message */
+
+	.messageinner{
+		width: 100%;
+		margin: 70px auto 0 auto;
+		height: auto;
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.messageimg{
+		float: none;
+		width: 100%;
+		height: 30%;
+		order: 2;
+		margin-top: 120px;
+		position: relative;
+	}
+
+	.messagelist{
+		color: #333;
+		font-size: 14px;
+		float: none;
+		visibility: hidden;
+		order: 1;
+		width: 100%;
+		height: auto;
+		-ms-writing-mode: horizontal-tb;
+		writing-mode: horizontal-tb;
+		text-align: center;
+	}
+
+	.message1{
+		font-family: 'Georgia',sans-serif;
+		font-size: 14px;
+		text-align: center;
+		display: block;
+		position: absolute;
+		/* right: 33%;
+		top: 100%; */
+		top: 105%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	.message1 p{
+		padding-bottom: 10px;
+		padding-left: 0;
+	}
+
+	.message{
+		padding-bottom: 35px;
+		padding-left: 0;
+	}
+	
+	.message p{
+		padding-bottom: 10px;
+		letter-spacing: 2px;
+	}
+
+	/* news */
+
+	.newsinner{
+		width: 100%;
+		margin: 135px auto 0 auto;
+	}
+	
+	.news_list{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		background-color: #eee;
+	}
+	
+	.title_news{
+		font-size: 35px;
+		font-family: 'Georgia',sans-serif;
+		text-align: center;
+		padding: 30px 0 15px 0;
+	}
+	
+	.news_menu li a{
+	 text-decoration: none;
+	 font-family: '凸版文久明朝',sans-serif;
+	 color: #949292;
+	 font-size: 14px;
+	 padding: 20px 0 ;
+	 display: inline-block;
+	 margin-left: 10px;
+	 position: relative;
+	}
+	
+	.news_menu li span{
+		color: #333;
+		padding-left: 0px;
+		display: block;
+	}
+	
+	/* .news_menu li a:hover{
+		text-decoration: underline;
+	} */
+	
+	.news_menu{
+		max-height: 200px;
+		overflow-y: scroll;
+		margin: 0 auto;
+		width: auto;
+	}
+	
+	
+	.news_menu li a::after {
+		position: absolute;
+		bottom: -4px;
+		left: 0;
+		content: '';
+		width: 100%;
+		height: 2px;
+		background: #891835;
+		transform: scale(0, 1);
+		transform-origin: center top;
+		transition: transform .3s;
+	}
+	
+	.news_menu li a:hover::after {
+		transform: scale(1, 1);
+	}
+
+	/* 野球部紹介 */
+
+	.aboutinner{
+		width: 100%;
+		margin: 135px auto 0 auto;
+		flex-direction: column;
+		flex-flow: row wrap;
+		visibility: hidden;
+	}
+	
+	.about_menu{
+		max-width: 100%;
+		height: auto;
+		font-family: '游教科書体',sans-serif;
+		color: #333;
+		margin: 0 auto;
+		order: 2;
+	}
+	
+	.about_menu h2{
+		font-size: 35px;
+		letter-spacing: 2px;
+		text-align: center;
+		margin-top: 10px;
+	}
+	
+	.about_menu p{
+		padding: 20px 0 20px 0;
+		font-size: 16px;
+		line-height: 30px;
+	}
+	
+	.about_menu ul{
+		display: flex;
+		padding-bottom: 10px;
+	}
+	
+	.about_menu ul li a{
+		text-decoration: none;
+		color: #891835;
+		font-size: 14px;
+		padding: 40px;
+	}
+	
+	.about_menu ul li a:hover{
+		text-decoration: underline;
+	}
+	
+	.about_btn a{
+		display: inline-block;
+		text-decoration: none;
+		background-color: #891835;
+		color: #fff;
+		width: 205px;
+		height: 42px;
+		border-radius: 10px;
+		text-align: center;
+		line-height: 42px;
+		position: relative;
+		margin-top: 40px;
+		margin-left: 100px;
+		transition-property: all;
+		transition: 0.3s linear;
+	}
+	
+	.about_btn a:hover{
+		opacity: 0.8;
+	}
+	
+	.about_btn a::after{
+		content: '→';
+		position: absolute;
+		top: 1px;
+		right: 40px;
+	}
+	
+	.about_img{
+		order: 1;
+		max-width: 100%;
+		display: inline-block;
+		margin-right: 0px;
+		display: none;
+	}
+
+	/* 試合情報 */
+
+	
+.aboutinner{
+	width: 100%;
+	margin: 0 auto 0 auto;
+	display: block;
+	visibility: hidden;
+}
+
+.about_menu{
+	margin: 135px auto 0 auto;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	padding: 0;
+	font-family: '游教科書体',sans-serif;
+	color: #333;
+	text-align: center;
+}
+
+.about_menu h2{
+	font-size: 35px;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.about_menu .about_message{
+	padding: 20px 0 20px 0;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.about_menu ul{
+	display: flex;
+	padding-bottom: 20px;
+	padding-left: 100px;
+}
+
+.about_menu ul li a{
+	text-decoration: none;
+	color: #891835;
+	font-size: 10px;
+	padding: 10px;
+}
+
+.about_menu ul li a:hover{
+	text-decoration: underline;
+}
+
+.about_btn a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #891835;
+	color: #fff;
+	width: 180px;
+	height: 42px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+	margin: 40px auto 0 auto;
+	transition-property: all;
+	transition: 0.3s linear;
+}
+
+.about_btn a:hover{
+	opacity: 0.8;
+}
+
+.about_btn a::after{
+	content: '→';
+	position: absolute;
+	top: 1px;
+	right: 20px;
+}
+
+.about_img{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* 試合情報 */
+
+.gameinfoinner{
+	width: 100%;
+	height: auto;
+	margin: 135px auto 0 auto;
+	display: block;
+}
+
+.gameinfoimg{
+	width: 100%;
+	height: 300px;
+	visibility: hidden;
+}
+
+.gameinfo_list{
+	margin: 300px auto 0 auto;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	padding: 0;
+	font-family: '游教科書体',sans-serif;
+	color: #333;
+	text-align: center;
+}
+
+.gameinfo_list h2{
+	font-family: 'Georgia',sans-serif;
+	font-size: 24px;
+	letter-spacing: 3px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+
+.gameinfo_list .game{
+ font-size: 16px;
+ margin-bottom: 30px;
+ padding-left: 0px;
+}
+
+.gameinfo_message{
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	padding-left: 0px;
+}
+
+.gameinfo_list ul{
+	display: flex;
+	padding-bottom: 20px;
+	padding-left: 50px;
+}
+
+.gameinfo_list ul li a{
+	text-decoration: none;
+	color: #891835;
+	font-size: 12px;
+	padding: 20px;
+}
+
+.gameinfo_list ul li a:hover{
+	text-decoration: underline;
+}
+
+.game_btn a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #891835;
+	color: #fff;
+	width: 205px;
+	height: 42px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+	margin-top: 20px;
+	margin-left: 0px;
+	transition-property: all;
+	transition: 0.3s linear;
+	letter-spacing: 2px;
+}
+
+.game_btn a:hover{
+	opacity: 0.8;
+}
+
+.game_btn a::after{
+	content: '→';
+	position: absolute;
+	top: 1px;
+	right: 35px;
+}
+
+/* 過去の戦績 */
+
+.historyinner{
+	width: 100%;
+	height: auto;
+	margin: 1000px auto 0 auto;
+	color: #333;
+	font-family: '游教科書体',sans-serif;
+	visibility: hidden;
+}
+
+.history_list{
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+}
+
+.historyinner h2{
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+.history_game{
+	transition-property: all;
+	transition: 0.3s linear;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+
+.history_game img{
+	display: block;
+	margin: 0;
+	padding: 0;
+	transition: 0.1s all;
+	width: 100%;
+	height: auto;
+}
+
+.history_game img:hover{
+	transform:scale(1.2,1.2);
+  transition: 1s all;
+}
+
+.history_gametitle1 a{
+	text-align: center;
+	background-color: #29303a;
+	color: #fff;
+	font-size: 14px;
+	font-family: '凸版文久明朝',sans-serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+.history_gametitle2 a{
+	text-align: center;
+	background-color: #3a414c;
+	color: #fff;
+	font-size: 14px;
+	font-family: '凸版文久明朝',sans-serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+.history_gametitle1 a:hover,
+.history_gametitle2 a:hover{
+	opacity: 0.8;
+	text-decoration: underline;
+}
+
+.history_btn{
+	text-align: center;
+}
+
+.history_btn a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #891835;
+	color: #fff;
+	width: 205px;
+	height: 42px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+	margin-top: 40px;
+	transition-property: all;
+	transition: 0.3s linear;
+	letter-spacing: 2px;
+}
+
+
+.history_btn a:hover{
+	opacity: 0.8;
+}
+
+.history_btn a::after{
+	content: '→';
+	position: absolute;
+	top: 1px;
+	right: 35px;
+}
+
+/* コンテンツ一覧 */
+
+.contentsinner{
+	width: 100%;
+	height: auto;
+	margin: 100px auto 0 auto;
+	color: #333;
+	font-family: '游教科書体',sans-serif;
+	visibility: hidden;
+}
+
+.contents_list{
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+}
+
+.contentsinner h2{
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+.contents{
+	transition-property: all;
+	transition: 0.3s linear;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+
+.contents img{
+	display: block;
+	margin: 0;
+	padding: 0;
+	transition: 0.1s all;
+	width: 100%;
+}
+
+.contents img:hover{
+	transform:scale(1.2,1.2);
+  transition: 1s all;
+}
+
+.contents_title1 a{
+	text-align: center;
+	background-color: #29303a;
+	color: #fff;
+	font-size: 14px;
+	font-family: '凸版文久明朝',sans-serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+.contents_title2 a{
+	text-align: center;
+	background-color: #3a414c;
+	color: #fff;
+	font-size: 14px;
+	font-family: '凸版文久明朝',sans-serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+.contents_title1 a:hover,
+.contents_title2 a:hover{
+	opacity: 0.8;
+	text-decoration: underline;
+}
+
+.contents_btn{
+	text-align: center;
+}
+
+.contents_btn a{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #891835;
+	color: #fff;
+	width: 205px;
+	height: 42px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+	margin-top: 40px;
+	transition-property: all;
+	transition: 0.3s linear;
+	letter-spacing: 2px;
+}
+
+
+.contents_btn a:hover{
+	opacity: 0.8;
+}
+
+.contents_btn a::after{
+	content: '→';
+	position: absolute;
+	top: 1px;
+	right: 20px;
+}
+
+/* フッター */
+
+footer{
+	width: 100%;
+	background-color:#891835;
+	height: 150px;
+	color: #fff;
+	font-family: '凸版文久明朝',sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+.footerinner{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.footerinner ul{
+	display: block;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.footerinner ul li{
+ border-left: none;
+ padding-right: 30px;
+ padding-bottom: 10px;
+}
+
+.footerinner ul li:last-child{
+	border-right: none;
+}
+
+.footerinner ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	display: block;
+	padding-left: 30px;
+}
+
+.footerinner ul li a:hover{
+	text-decoration: underline;
+}
+
+}
+
+
+
