@@ -29,7 +29,7 @@ header nav{
 	height: 80px;
 	background-color: #891835;
 	line-height: 80px;
-	font-family: "凸版文久明朝",sans-serif;
+	font-family: "凸版文久明朝",serif;
 }
 
 header nav ul{
@@ -136,7 +136,7 @@ header .kv{
   text-align: center;
   color: #333;
 	box-sizing: border-box;
-	font-family: "凸版文久明朝",sans-serif;
+	font-family: "凸版文久明朝",serif;
 	text-decoration: none;
 	display: block;
 	position: relative;
@@ -185,7 +185,7 @@ header .kv{
 	width: 1200px;
 	height: auto;
 	margin: 135px auto 0 auto;
-	font-family: "游教科書体", sans-serif;
+	font-family: "游教科書体", serif;
 }
 
 .messageimg{
@@ -218,7 +218,7 @@ header .kv{
 	position: absolute;
 	left: -10;
 	top: 0;
-	font-family: 'Georgia',sans-serif;
+	font-family: 'Georgia',serif;
 	font-size: 22px;
 	letter-spacing: 6px;
 
@@ -244,7 +244,7 @@ header .kv{
 
 .title_news{
 	font-size: 35px;
-	font-family: 'Georgia',sans-serif;
+	font-family: 'Georgia',serif;
 	text-align: center;
 	padding: 30px 0 15px 0;
 	letter-spacing: 5px;
@@ -252,7 +252,7 @@ header .kv{
 
 .news_menu li a{
  text-decoration: none;
- font-family: '凸版文久明朝',sans-serif;
+ font-family: '凸版文久明朝',serif;
  color: #949292;
  font-size: 16px;
  padding: 20px 0 ;
@@ -308,7 +308,7 @@ header .kv{
 
 .about_menu{
 	height: auto;
-	font-family: '游教科書体',sans-serif;
+	font-family: '游教科書体',serif;
 	color: #333;
 	margin: 0 auto;
 }
@@ -402,7 +402,7 @@ header .kv{
 	height: 450px;
 	background-color: #eee;
 	padding: 60px 0 0 100px;
-	font-family: '游教科書体',sans-serif;
+	font-family: '游教科書体',serif;
 	color: #333;
 	position: absolute;
 	top: 50px;
@@ -411,7 +411,7 @@ header .kv{
 }
 
 .gameinfo_list h2{
-	font-family: 'Georgia',sans-serif;
+	font-family: 'Georgia',serif;
 	font-size: 28px;
 	letter-spacing: 3px;
 	padding-bottom: 10px;
@@ -491,7 +491,7 @@ header .kv{
 	height: auto;
 	margin: 800px auto 0 auto;
 	color: #333;
-	font-family: '游教科書体',sans-serif;
+	font-family: '游教科書体',serif;
 	visibility: hidden;
 }
 
@@ -532,7 +532,7 @@ header .kv{
 	background-color: #29303a;
 	color: #fff;
 	font-size: 14px;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
 	display: block;
@@ -548,7 +548,7 @@ header .kv{
 	background-color: #3a414c;
 	color: #fff;
 	font-size: 14px;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
 	display: block;
@@ -608,7 +608,7 @@ header .kv{
 	height: auto;
 	margin: 250px auto 0 auto;
 	color: #333;
-	font-family: '游教科書体',sans-serif;
+	font-family: '游教科書体',serif;
 	visibility: hidden;
 }
 
@@ -649,7 +649,7 @@ header .kv{
 	background-color: #29303a;
 	color: #fff;
 	font-size: 14px;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
 	display: block;
@@ -665,7 +665,7 @@ header .kv{
 	background-color: #3a414c;
 	color: #fff;
 	font-size: 14px;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
 	display: block;
@@ -725,7 +725,7 @@ footer{
 	background-color:#891835;
 	height: 150px;
 	color: #fff;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	font-size: 12px;
 	text-align: center;
 	margin-top: 135px;
@@ -824,7 +824,7 @@ footer{
 	}
 
 	.message1{
-		font-family: 'Georgia',sans-serif;
+		font-family: 'Georgia',serif;
 		font-size: 20px;
 		text-align: center;
 		display: block;
@@ -865,7 +865,7 @@ footer{
 
 .title_news{
 	font-size: 35px;
-	font-family: 'Georgia',sans-serif;
+	font-family: 'Georgia',serif;
 	text-align: center;
 	padding: 30px 0 15px 0;
 	letter-spacing: 2px;
@@ -873,7 +873,7 @@ footer{
 
 .news_menu li a{
  text-decoration: none;
- font-family: '凸版文久明朝',sans-serif;
+ font-family: '凸版文久明朝',serif;
  color: #949292;
  font-size: 14px;
  padding: 20px 0 ;
@@ -933,7 +933,7 @@ footer{
 	height: auto;
 	background-color: #fff;
 	padding: 0;
-	font-family: '游教科書体',sans-serif;
+	font-family: '游教科書体',serif;
 	color: #333;
 }
 
@@ -1024,12 +1024,12 @@ footer{
 	height: auto;
 	background-color: #fff;
 	padding: 0;
-	font-family: '游教科書体',sans-serif;
+	font-family: '游教科書体',serif;
 	color: #333;
 }
 
 .gameinfo_list h2{
-	font-family: 'Georgia',sans-serif;
+	font-family: 'Georgia',serif;
 	font-size: 24px;
 	letter-spacing: 3px;
 	padding-bottom: 10px;
@@ -1103,7 +1103,7 @@ footer{
 	height: auto;
 	margin: 1000px auto 0 auto;
 	color: #333;
-	font-family: '游教科書体',sans-serif;
+	font-family: '游教科書体',serif;
 	visibility: hidden;
 }
 
@@ -1144,7 +1144,7 @@ footer{
 	background-color: #29303a;
 	color: #fff;
 	font-size: 14px;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
 	display: block;
@@ -1160,7 +1160,7 @@ footer{
 	background-color: #3a414c;
 	color: #fff;
 	font-size: 14px;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
 	display: block;
@@ -1217,7 +1217,7 @@ footer{
 	height: auto;
 	margin: 100px auto 0 auto;
 	color: #333;
-	font-family: '游教科書体',sans-serif;
+	font-family: '游教科書体',serif;
 	visibility: hidden;
 }
 
@@ -1259,7 +1259,7 @@ footer{
 	background-color: #29303a;
 	color: #fff;
 	font-size: 14px;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝'、serif;
 	height: 50px;
 	line-height: 50px;
 	display: block;
@@ -1275,7 +1275,7 @@ footer{
 	background-color: #3a414c;
 	color: #fff;
 	font-size: 14px;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
 	display: block;
@@ -1332,7 +1332,7 @@ footer{
 	background-color:#891835;
 	height: 150px;
 	color: #fff;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	font-size: 12px;
 	text-align: center;
 	padding-top: 10px;
@@ -1430,7 +1430,7 @@ footer{
 	}
 
 	.message1{
-		font-family: 'Georgia',sans-serif;
+		font-family: 'Georgia',serif;
 		font-size: 14px;
 		text-align: center;
 		display: block;
@@ -1473,14 +1473,14 @@ footer{
 	
 	.title_news{
 		font-size: 35px;
-		font-family: 'Georgia',sans-serif;
+		font-family: 'Georgia',serif;
 		text-align: center;
 		padding: 30px 0 15px 0;
 	}
 	
 	.news_menu li a{
 	 text-decoration: none;
-	 font-family: '凸版文久明朝',sans-serif;
+	 font-family: '凸版文久明朝',serif;
 	 color: #949292;
 	 font-size: 14px;
 	 padding: 20px 0 ;
@@ -1537,7 +1537,7 @@ footer{
 	.about_menu{
 		max-width: 100%;
 		height: auto;
-		font-family: '游教科書体',sans-serif;
+		font-family: '游教科書体',serif;
 		color: #333;
 		margin: 0 auto;
 		order: 2;
@@ -1624,7 +1624,7 @@ footer{
 	height: auto;
 	background-color: #fff;
 	padding: 0;
-	font-family: '游教科書体',sans-serif;
+	font-family: '游教科書体',serif;
 	color: #333;
 	text-align: center;
 }
@@ -1714,13 +1714,13 @@ footer{
 	height: auto;
 	background-color: #fff;
 	padding: 0;
-	font-family: '游教科書体',sans-serif;
+	font-family: '游教科書体',serif;
 	color: #333;
 	text-align: center;
 }
 
 .gameinfo_list h2{
-	font-family: 'Georgia',sans-serif;
+	font-family: 'Georgia',serif;
 	font-size: 24px;
 	letter-spacing: 3px;
 	padding-bottom: 10px;
@@ -1794,7 +1794,7 @@ footer{
 	height: auto;
 	margin: 1000px auto 0 auto;
 	color: #333;
-	font-family: '游教科書体',sans-serif;
+	font-family: '游教科書体',serif;
 	visibility: hidden;
 }
 
@@ -1837,7 +1837,7 @@ footer{
 	background-color: #29303a;
 	color: #fff;
 	font-size: 14px;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
 	display: block;
@@ -1853,7 +1853,7 @@ footer{
 	background-color: #3a414c;
 	color: #fff;
 	font-size: 14px;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
 	display: block;
@@ -1910,7 +1910,7 @@ footer{
 	height: auto;
 	margin: 100px auto 0 auto;
 	color: #333;
-	font-family: '游教科書体',sans-serif;
+	font-family: '游教科書体',serif;
 	visibility: hidden;
 }
 
@@ -1952,7 +1952,7 @@ footer{
 	background-color: #29303a;
 	color: #fff;
 	font-size: 14px;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
 	display: block;
@@ -1968,7 +1968,7 @@ footer{
 	background-color: #3a414c;
 	color: #fff;
 	font-size: 14px;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
 	display: block;
@@ -2025,7 +2025,7 @@ footer{
 	background-color:#891835;
 	height: 150px;
 	color: #fff;
-	font-family: '凸版文久明朝',sans-serif;
+	font-family: '凸版文久明朝',serif;
 	font-size: 12px;
 	text-align: center;
 	padding-top: 10px;
