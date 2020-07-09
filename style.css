@@ -807,7 +807,7 @@ footer{
 
 	.messagelist{
 		color: #333;
-		font-size: 14px;
+		font-size: 12px;
 		float: none;
 		visibility: hidden;
 		order: 1;
@@ -820,7 +820,7 @@ footer{
 
 	.message1{
 		font-family: 'Georgia',serif;
-		font-size: 14px;
+		font-size: 8px;
 		text-align: center;
 		display: block;
 		position: absolute;
@@ -1412,7 +1412,7 @@ footer{
 
 	.messagelist{
 		color: #333;
-		font-size: 14px;
+		font-size: 12px;
 		float: none;
 		visibility: hidden;
 		order: 1;
@@ -1425,7 +1425,7 @@ footer{
 
 	.message1{
 		font-family: 'Georgia',serif;
-		font-size: 14px;
+		font-size: 10px;
 		text-align: center;
 		display: block;
 		position: absolute;
@@ -1434,6 +1434,7 @@ footer{
 		top: 105%;
 		left: 50%;
 		transform: translate(-50%,-50%);
+		letter-spacing: 2px;
 	}
 
 	.message1 p{
