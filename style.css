@@ -807,7 +807,7 @@ footer{
 
 	.messagelist{
 		color: #333;
-		font-size: 16px;
+		font-size: 14px;
 		float: none;
 		visibility: hidden;
 		order: 1;
@@ -820,7 +820,7 @@ footer{
 
 	.message1{
 		font-family: 'Georgia',serif;
-		font-size: 16px;
+		font-size: 14px;
 		text-align: center;
 		display: block;
 		position: absolute;
