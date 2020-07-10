@@ -859,7 +859,7 @@ footer{
 
 	.messagelist{
 		color: #333;
-		font-size: 12px;
+		font-size: 10px;
 		float: none;
 		visibility: hidden;
 		order: 1;
@@ -872,7 +872,7 @@ footer{
 
 	.message1{
 		font-family: 'Georgia',serif;
-		font-size: 8px;
+		font-size: 12px;
 		text-align: center;
 		display: block;
 		position: absolute;
@@ -1464,7 +1464,7 @@ footer{
 
 	.messagelist{
 		color: #333;
-		font-size: 12px;
+		font-size: 14px;
 		float: none;
 		visibility: hidden;
 		order: 1;
@@ -1477,7 +1477,7 @@ footer{
 
 	.message1{
 		font-family: 'Georgia',serif;
-		font-size: 10px;
+		font-size: 16px;
 		text-align: center;
 		display: block;
 		position: absolute;
@@ -1534,6 +1534,7 @@ footer{
 	 display: inline-block;
 	 margin-left: 10px;
 	 position: relative;
+	 text-align: ;
 	}
 	
 	.news_menu li span{
