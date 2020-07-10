@@ -22,6 +22,12 @@ $(function(){
   });
 }());
 
+$(function(){
+  $('.btn-trigger').on('click', function(){
+    $('.menu').toggleClass('is-active');
+  });
+}());
+
 // newsフェードイン
 /* WayPoint */
 $('.newsinner').waypoint(function(){
@@ -95,5 +101,12 @@ $('.contentsinner').waypoint(function(){
   }
 },{offset: '80%'}
 );
+
+$(function(){
+  $('.btn-trigger').on('click', function() {
+    $(this).toggleClass('active');
+    return false;
+  });
+});
 
 });
