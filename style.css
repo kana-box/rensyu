@@ -1150,6 +1150,16 @@ footer{
 	float: left;
 }
 
+.history_list1{
+	width: 50%;
+	float: left;
+}
+
+.history_list2{
+	width: 50%;
+	float: left;
+}
+
 .historyinner h2{
 	text-align: center;
 	font-size: 35px;
@@ -1171,6 +1181,7 @@ footer{
 	transition: 0.1s all;
 	height: 300px;
 }
+
 
 .history_game img:hover{
 	transform:scale(1.2,1.2);
@@ -1196,8 +1207,8 @@ footer{
 .history_gametitle2 a{
 	text-align: center;
 	background-color: #3a414c;
-	color: #fff;
-	font-size: 14px;
+	color: #333;
+	font-size: 6px;
 	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
@@ -1209,8 +1220,27 @@ footer{
 	letter-spacing: 2px;
 }
 
+.history_gametitle3 a{
+	text-align: center;
+	background-color: #3a414c;
+	color: #fff;
+	font-size: 6px;
+	font-family: '凸版文久明朝',serif;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+	transition-property: all;
+	transition: 0.3s linear;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+
+
 .history_gametitle1 a:hover,
-.history_gametitle2 a:hover{
+.history_gametitle2 a:hover,
+.history_gametitle3 a:hover{
 	opacity: 0.8;
 	text-decoration: underline;
 }
@@ -1259,11 +1289,32 @@ footer{
 	visibility: hidden;
 }
 
-.contents_list{
-	width: 100%;
-	height: 350px;
+.contents_list1{
+	width: 50%;
+	height: auto;
 	margin: 0 auto;
 	float: left;
+}
+
+.contents_list2{
+		width: 50%;
+		height: auto;
+		margin: 0 auto;
+		float: left;
+}
+
+.contents_list3{
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	float: left;
+}
+
+.contents_list4{
+		width: 50%;
+		height: auto;
+		margin: 0 auto;
+		float: left;
 }
 
 .contentsinner h2{
@@ -1286,7 +1337,7 @@ footer{
 	padding: 0;
 	transition: 0.1s all;
 	width: 100%;
-	height: 300px;
+	height: 200px;
 }
 
 .contents img:hover{
