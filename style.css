@@ -1179,7 +1179,8 @@ footer{
 	margin: 0;
 	padding: 0;
 	transition: 0.1s all;
-	height: 300px;
+	height: auto;
+	width: 100%;
 }
 
 
@@ -1208,7 +1209,7 @@ footer{
 	text-align: center;
 	background-color: #3a414c;
 	color: #333;
-	font-size: 6px;
+	font-size: 8px;
 	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
@@ -1224,7 +1225,7 @@ footer{
 	text-align: center;
 	background-color: #3a414c;
 	color: #fff;
-	font-size: 6px;
+	font-size: 8px;
 	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
@@ -1866,7 +1867,7 @@ footer{
 	text-align: center;
 	background-color: #3a414c;
 	color: #333;
-	font-size: 6px;
+	font-size: 8px;
 	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
@@ -1882,7 +1883,7 @@ footer{
 	text-align: center;
 	background-color: #3a414c;
 	color: #fff;
-	font-size: 6px;
+	font-size: 8px;
 	font-family: '凸版文久明朝',serif;
 	height: 50px;
 	line-height: 50px;
