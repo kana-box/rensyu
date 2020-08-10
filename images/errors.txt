@@ -1,0 +1,3 @@
+[2020-8-9 14:34:18] layer "k16.jpg": Duplicate path: k16.jpg
+[2020-8-9 14:34:18] layer "k17.jpg": Duplicate path: k17.jpg
+[2020-8-9 14:34:18] layer "k18.jpg": Duplicate path: k18.jpg
