@@ -379,6 +379,7 @@ header .kv{
 	padding: 40px;
 }
 
+
 .about_menu ul li a:hover{
 	text-decoration: underline;
 }
@@ -411,6 +412,7 @@ header .kv{
 	top: 1px;
 	right: 35px;
 }
+
 
 .about_img{
 	margin-right: 100px;
@@ -906,7 +908,7 @@ footer{
  }
  
 .about_inner{
-	width: 1400px;
+	width: 1000px;
 	margin: 0 auto;
 	font-family: '凸版文久明朝',serif;
 	font-size: 16px;
@@ -929,7 +931,7 @@ footer{
 }
 
 .aboutlist{
-	width: 600px;
+	width: 400px;
 }
 
 .aboutlist a{
@@ -977,7 +979,7 @@ footer{
 }
 
 .history_inner{
-	width: 1400px;
+	width: 1000px;
 	margin: 0 auto;
 	font-family: '凸版文久明朝',serif;
 	font-size: 16px;
@@ -1190,7 +1192,7 @@ footer{
 }
 
 .game_inner{
-	width: 1400px;
+	width: 1000px;
 	margin: 0 auto;
 	font-family: '凸版文久明朝',serif;
 	font-size: 16px;
@@ -1228,7 +1230,7 @@ footer{
 }
 
 .contents_inner{
-	width: 1400px;
+	width: 1000px;
 	margin: 0 auto;
 	font-family: '凸版文久明朝',serif;
 	font-size: 16px;
